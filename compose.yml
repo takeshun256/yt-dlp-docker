@@ -1,0 +1,8 @@
+version: "3"
+services:
+  yt-dlp:
+    build: .
+    volumes:
+      - ./downloads:/downloads
+    stdin_open: true
+    tty: true
