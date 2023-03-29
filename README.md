@@ -1,6 +1,6 @@
 # yt-dlp-script
 
-Docker環境で[yt-dlp](https://github.com/yt-dlp/yt-dlp)を実行し、ローカル環境を汚さずに、簡単にyt-dlpを扱えるようにする個人的なプロジェクト
+Docker環境で[yt-dlp](https://github.com/yt-dlp/yt-dlp)を実行し、ローカル環境を汚さずにyt-dlpを扱えるための個人的なプロジェクトです。
 
 ## セットアップ
 ### クローン
@@ -10,44 +10,43 @@ cd yt-dlp-docker
 ```
 
 ### 使い方
-- 動画を最高画質でダウンロードする
+
+以下は主な使い方になります。
+
+- 動画を最高画質でダウンロードする場合: 
 ```bash
 make all
 ```
 
-- 音声を最高品質でダウンロードする
+- 音声を最高品質でダウンロードする場合: 
 ```bash
 make build
 make dl_audio_best_quality
 ```
 
-- ライブを動画で最高画質でダウンロードする
+- ライブを動画で最高画質でダウンロードする場合: 
 ```bash
 make build
 make dl_video_live_stream
 ```
 
-- インタラクティブにDocker環境を使用する
+- インタラクティブにDocker環境を使用する場合: 
 ```bash
 make build
 make run
 ```
 
-- ビルドしたイメージの削除
+- ビルドしたイメージの削除: 
 ```bash
 make clean
 ```
 
 ### ダウンロード後
-- ダウンロード先は、`yt-dlp-docker/downloads/` に保存される。
-- ダウンロードされたファイルをすべて任意の場所に移動させる(デフォルトはデスクトップ下)
+- ダウンロード先は、`yt-dlp-docker/downloads/` に保存されます。
+- ダウンロードされたファイルを任意の場所に移動することができます。移動先のデフォルトはデスクトップ下になります。
 ```bash
 make move_downloads
 ```
-
-
-
-
 
 ## 参考
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
