@@ -1,4 +1,4 @@
-# yt-dlp-script
+# yt-dlp-docker
 
 Docker環境で[yt-dlp](https://github.com/yt-dlp/yt-dlp)を実行し、ローカル環境を汚さずにyt-dlpを扱えるための個人的なプロジェクトです。
 
