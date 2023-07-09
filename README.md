@@ -22,13 +22,13 @@ make all
 - 音声を最高品質でダウンロードする場合: 
 ```bash
 make build
-make dl_audio_best_quality
+make dl_audio-best-quality
 ```
 
 - ライブを動画で最高画質でダウンロードする場合: 
 ```bash
 make build
-make dl_video_live_stream
+make dl_video-live-stream
 ```
 
 - インタラクティブにDocker環境を使用する場合: 
